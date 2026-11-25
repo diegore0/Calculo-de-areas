@@ -1,0 +1,135 @@
+/* PALETA DE CORES: ALTERE OS VALORES ABAIXO */
+
+/* PALETA DE CORES: ROXO */
+:root {
+    --cor-principal: #6A0DAD;    /* Roxo principal */
+    --cor-destaque: #8A2BE2;     /* Roxo mais claro */
+    --cor-borda: #9370DB;        /* Lilás nas bordas */
+
+    --cor-hover: #4B0082;        /* Roxo escuro */
+    --cor-fundo: #E6D6F5;        /* Lilás claro */
+
+    --cor-texto: #30104A;        /* Roxo escuro para textos */
+
+    --cor-card: #FFFFFF;         /* Fundo branco */
+    --cor-texto-claro: #FFFFFF;  /* Texto branco */
+}
+
+
+}
+
+/* CONFIGURACOES GERAIS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    text-align: center;
+}
+
+/* CABECALHO E REDES SOCIAIS */
+header {
+    background-color: var(--cor-principal);
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: var(--cor-texto-claro);
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: var(--cor-texto);
+    font-size: 32px;
+}
+
+header h1 {
+    background-color: var(--cor-hover);
+    color: var(--cor-texto-claro);
+    padding: 15px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+/* CARD CENTRAL */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.card {
+    background-color: var(--cor-card);
+    color:var(--cor-texto);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.card h2 {
+    color: var(--cor-destaque);
+}
+
+.card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* negrito */
+}
+
+.card input, select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card button {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-claro);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: var(--cor-hover);
+}
+
+#resultado {
+    color: var(--cor-destaque);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* RODAPE */
+footer {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-claro);
+    padding: 15px;
+}

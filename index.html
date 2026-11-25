@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Áreas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="diego-area.css">
+</head>
+<body>
+    <header>
+        <!-- Redes sociais -->
+        <div class="social-icons">
+            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Portfólio"><i class="fas fa-globe"></i></a>
+            <a href="" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="" aria-label="E-mail"><i class="far fa-envelope"></i></a>
+            <a href="" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <h1>Cálculo de Áreas</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Área de figuras geométricas</h2>
+            <p> Escolha a figura</p>
+            <select id="figura">
+                <option value = "retangulo">Retângulo</option>
+                <option value = "triangulo">Triângulo</option>
+				 <option value = "circulo">Circulo</option>
+				  <option value = "quadrado">Quadrado</option>
+            </select>
+            
+            <p>Informe a base e a altura.</p>
+
+        <div id="camposRetangulo">
+            <label for="peso">Base (cm):</label>
+            <input type="number" id="base" placeholder="Ex.: 6" step="any">
+
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" placeholder="Ex.: 2" step="any">
+		</div>
+		
+		<div id="campoCirculo">
+			<label for="raio">Raio (cm):</label>
+            <input type="number" id="raio" placeholder="Ex.: 5" step="any">
+        </div>
+
+        <div id="campoQuadrado">
+            <label for="lado">Lado (cm):</label>
+            <input type="number" id="lado" placeholder="Ex.: 4" step="any">
+        </div>
+
+            <button type="button" onclick="calcularAreaRetangulo()">Calcular</button>
+
+            <p id="resultado" aria-live="polite"></p>
+        </div>
+    </main>
+
+    <footer>
+        Desenvolvido por Diego Campbell | 2026 | Curso Programador FrontEnd SENAI
+    </footer>
+
+    <script src="diego-areajs.js"></script>
+</body>
+</html>
